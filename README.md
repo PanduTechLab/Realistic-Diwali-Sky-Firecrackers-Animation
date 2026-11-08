@@ -14,8 +14,8 @@ Built with **zero external dependencies**—runs out of the box in **VS Code** v
 ## 📂 Project Structure
 
 ```text
-├── index.html       # 🌐 Web animation (HTML5 Canvas + Web Audio API)
-├── main.py          # 🐍 Desktop animation (Python standard library Tkinter)
+├── Firecrackers.html       # 🌐 Web animation (HTML5 Canvas + Web Audio API)
+├── Firecrackers.py          # 🐍 Desktop animation (Python standard library Tkinter)
 ├── LICENSE          # 📄 MIT License
 └── README.md        # 📖 Documentation and usage guide
 ```
@@ -50,14 +50,14 @@ The Python version uses standard library `tkinter` and `winsound`. No `pip insta
    - Launch VS Code.
    - Go to **File** > **Open Folder...** and select this project folder.
 2. **Open the Script**:
-   - Click on [main.py](main.py) in the VS Code file explorer.
+   - Click on [Firecrackers.py](Firecrackers.py) in the VS Code file explorer.
 3. **Run the Code**:
    - Click the **▷ Run Python File** button in the top-right corner of the editor, or
    - Open the integrated terminal (`Ctrl + ~`) and type:
      ```powershell
-     py main.py
+     py Firecrackers.py
      ```
-     *(or `python main.py` depending on your environment)*
+     *(or `python Firecrackers.py` depending on your environment)*
 4. **Result**: A dedicated desktop window will launch immediately, displaying the real-time particle fireworks animation and playing sound effects.
 
 ---
@@ -67,48 +67,15 @@ The Python version uses standard library `tkinter` and `winsound`. No `pip insta
 The web version is self-contained in a single file and works 100% offline in Chrome, Edge, Firefox, Brave, Safari, or Opera.
 
 1. **Direct Double-Click**:
-   - Open your file explorer and double-click [index.html](index.html). It will open immediately in your default browser.
+   - Open your file explorer and double-click [Firecrackers.html](Firecrackers.html). It will open immediately in your default browser.
 2. **From VS Code Terminal**:
    - Open the VS Code terminal (`Ctrl + ~`) and run:
      ```powershell
-     start index.html
+     start Firecrackers.html
      ```
 3. **Using VS Code Live Server**:
-   - Right-click `index.html` in the file explorer and select **Open with Live Server**.
+   - Right-click `Firecrackers.html` in the file explorer and select **Open with Live Server**.
 4. **Result**: A full-screen dark sky animation opens. Click anywhere on the screen to initialize browser audio and interactively launch firecrackers.
-
----
-
-## 🌐 How to Host on GitHub Pages (Free Live Website)
-
-You can publish this project so anyone can view it online in their browser:
-
-1. **Create a GitHub Repository**:
-   - Go to [GitHub](https://github.com/new).
-   - Enter a repository name (e.g., `diwali-sky-firecrackers`).
-   - Keep the repository **Public** and click **Create repository**.
-2. **Push Your Files**:
-   In your project directory terminal, run:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Realistic sky firecrackers animation"
-   git branch -M main
-   git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPO-NAME>.git
-   git push -u origin main
-   ```
-3. **Enable GitHub Pages**:
-   - In your GitHub repository, click **Settings** (top menu).
-   - In the left sidebar, click **Pages**.
-   - Under **Build and deployment** > **Branch**:
-     - Select branch: `main`
-     - Select folder: `/(root)`
-     - Click **Save**.
-4. **Live URL**:
-   - Within 1–2 minutes, GitHub will publish your site at:
-     ```text
-     https://<YOUR-USERNAME>.github.io/<YOUR-REPO-NAME>/
-     ```
 
 ---
 
