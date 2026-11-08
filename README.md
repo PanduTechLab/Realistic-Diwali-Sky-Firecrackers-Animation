@@ -1,139 +1,124 @@
-# 🎆 Realistic Diwali Sky Firecrackers Animation
+# 🎆 Realistic Sky Firecrackers Animation
 
-[![Language](https://img.shields.io/badge/Language-Python%20%7C%20HTML5%20%2F%20JS-blue.svg)](https://github.com)
+[![Language](https://img.shields.io/badge/Language-Python%20%7C%20HTML5%20%2F%20JavaScript-blue.svg)](https://github.com)
 [![Dependencies](https://img.shields.io/badge/Dependencies-Zero%20(Pure%20Standard%20Library)-success.svg)](https://github.com)
 [![Platform](https://img.shields.io/badge/Platform-VS%20Code%20%7C%20Any%20Browser-orange.svg)](https://github.com)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 
-A high-performance, cinematic Diwali sky fireworks simulation inspired by authentic night-sky fireworks photography. Features realistic particle physics, aerodynamic drag, multi-break shells, weeping golden willows with multi-color pistils, atmospheric smoke haze, and zero third-party dependencies.
+A clean, cinematic sky firecrackers animation featuring realistic particle physics, aerodynamic drag, multi-break shells, weeping golden willows with multi-color pistil stars, atmospheric smoke haze, and procedural audio.
 
-Available in both a **Standard Realistic Version** and a **High Blast Speed Version**, playable as a standalone Python desktop app (via VS Code) or directly in any web browser (ready for GitHub Pages).
-
----
-
-## 📸 Reference Firecracker Styles
-
-| Firework Style | Inspiration | Physics & Visual Effect |
-| :--- | :--- | :--- |
-| **Needle Chrysanthemum** | *Image 4 & Ref 1* | Intense white-hot core with razor-sharp straight golden needle rays radiating in 360°, surrounded by floating crimson strobe sparks. |
-| **Imperial Willow with Pistils** | *Image 5 & Ref 1* | 260+ weeping golden/salmon streamers cascading with realistic gravity, embedded with vivid emerald, magenta, and cyan pistil stars. |
-| **Multi-Break Shell** | *Image 3* | Primary silver-white weeping willow shell followed by delayed secondary core bursts in violet and amber. |
-| **Crackling Palm (Kamuro)** | *Image 2* | Fast outward-streaking comets leaving crackling sparklet trails. |
-| **Ascending Rockets** | *Image 2 & 5* | Ballistic launches rising from below the screen with fiery exhaust trails and natural flight wobble. |
+Built with **zero external dependencies**—runs out of the box in **VS Code** via Python (`main.py`) or in **any web browser** via HTML5/JavaScript (`index.html`).
 
 ---
 
-## 📂 Repository File Structure
+## 📂 Project Structure
 
 ```text
-├── index.html               # 🌐 Standard realistic web simulation (GitHub Pages entry)
-├── fast_firecrackers.html   # ⚡ High blast speed web simulation (1.8x - 2x velocity)
-├── main.py                  # 🐍 Standard Python desktop application (VS Code ready)
-├── fast_main.py             # ⚡ High blast speed Python application
-├── images.jpg               # 🖼️ Reference photo: Imperial willow over water
-├── images (1).jpg           # 🖼️ Reference photo: Needle chrysanthemum
-├── images (2).jpg           # 🖼️ Reference photo: Ascending sky rockets
-├── images (3).jpg           # 🖼️ Reference photo: Multi-break Hanabi shell
-└── README.md                # 📖 Project documentation and guide
+├── index.html       # 🌐 Web animation (HTML5 Canvas + Web Audio API)
+├── main.py          # 🐍 Desktop animation (Python standard library Tkinter)
+├── LICENSE          # 📄 MIT License
+└── README.md        # 📖 Documentation and usage guide
 ```
+
+---
+
+## 🌟 Key Features
+
+- **Realistic Shell Physics & Particle Dynamics**:
+  - **Needle Chrysanthemums**: Blinding white-hot core with razor-sharp straight golden needle rays radiating in 360°, accompanied by floating crimson strobe sparks.
+  - **Imperial Willows with Pistils**: 260+ weeping golden/salmon streamers cascading gracefully under gravity, embedded with vivid emerald, magenta, and cyan pistil stars.
+  - **Multi-Break Hanabi Shells**: Silver-white weeping willow shell followed by delayed secondary bursts in violet and amber.
+  - **Crackling Palms (Kamuro)**: Fast outward comets leaving crackling sparklet trails.
+  - **Ascending Sky Rockets**: Ballistic launches rising from below the screen with fiery exhaust trails and natural flight wobble.
+- **Deep Pitch-Black Sky (`#000000`)**: Decorated with a few faint, gently twinkling stars and illuminated drifting smoke clouds.
+- **Zero UI Clutter**: Clean, full-screen cinematic presentation with no buttons, text overlays, or progress bars.
+- **Continuous 30-Second Showcase**: Scripted beginning-to-end choreographed display that loops seamlessly.
+- **Interactive**: Click or tap anywhere on the dark sky at any time to launch custom shells directly to your cursor.
+- **Procedural Sound Effects**:
+  - Web Audio API in `index.html` (whoosh, deep bass detonation thump, sharp crack, and crackling embers).
+  - Windows `winsound` in `main.py`.
 
 ---
 
 ## 🚀 How to Run the Code to Get the Output
 
-### Option 1: Running in Visual Studio Code (Python)
+### Method 1: Running in Visual Studio Code (Python Desktop App)
 
-Both Python scripts use Python's built-in `tkinter` and `winsound` libraries—**no `pip install` required!**
+The Python version uses standard library `tkinter` and `winsound`. No `pip install` commands are needed.
 
-1. **Open the project in VS Code**:
+1. **Open the Project in VS Code**:
    - Launch VS Code.
-   - Go to **File** > **Open Folder...** and select this directory.
-2. **Choose a version to run**:
-   - For the **Standard Realistic Version**: Open [main.py](main.py).
-   - For the **High Blast Speed Version**: Open [fast_main.py](fast_main.py).
-3. **Execute**:
-   - Click the **▷ Run Python File** button in the top-right corner of VS Code, or
-   - Open the integrated terminal (`Ctrl + ~`) and run:
+   - Go to **File** > **Open Folder...** and select this project folder.
+2. **Open the Script**:
+   - Click on [main.py](main.py) in the VS Code file explorer.
+3. **Run the Code**:
+   - Click the **▷ Run Python File** button in the top-right corner of the editor, or
+   - Open the integrated terminal (`Ctrl + ~`) and type:
      ```powershell
      py main.py
      ```
-     *(or `py fast_main.py` for the fast version)*
-4. A dedicated desktop window will launch immediately with 60 FPS particle physics and sound effects.
+     *(or `python main.py` depending on your environment)*
+4. **Result**: A dedicated desktop window will launch immediately, displaying the real-time particle fireworks animation and playing sound effects.
 
 ---
 
-### Option 2: Running in Any Web Browser (HTML5 / JavaScript)
+### Method 2: Running in Any Web Browser (HTML5 / JavaScript)
 
-The web versions are self-contained and run locally offline in Google Chrome, Microsoft Edge, Mozilla Firefox, Brave, or Safari.
+The web version is self-contained in a single file and works 100% offline in Chrome, Edge, Firefox, Brave, Safari, or Opera.
 
 1. **Direct Double-Click**:
-   - Double-click [index.html](index.html) or [fast_firecrackers.html](fast_firecrackers.html) in your file explorer.
-2. **From VS Code**:
-   - Right-click `index.html` > **Open with Live Server** (if the Live Server extension is installed), or
-   - In the VS Code terminal, run:
+   - Open your file explorer and double-click [index.html](index.html). It will open immediately in your default browser.
+2. **From VS Code Terminal**:
+   - Open the VS Code terminal (`Ctrl + ~`) and run:
      ```powershell
      start index.html
      ```
-     *(or `start fast_firecrackers.html`)*
-3. **Sound**: Click anywhere on the screen to initialize browser audio (Web Audio API).
+3. **Using VS Code Live Server**:
+   - Right-click `index.html` in the file explorer and select **Open with Live Server**.
+4. **Result**: A full-screen dark sky animation opens. Click anywhere on the screen to initialize browser audio and interactively launch firecrackers.
 
 ---
 
-## 🌐 How to Host Live for Free on GitHub Pages
+## 🌐 How to Host on GitHub Pages (Free Live Website)
 
-You can publish this project as a live website on your GitHub profile in under 2 minutes:
+You can publish this project so anyone can view it online in their browser:
 
 1. **Create a GitHub Repository**:
    - Go to [GitHub](https://github.com/new).
-   - Name your repository (e.g., `diwali-sky-firecrackers`).
-   - Choose **Public** and click **Create repository**.
-2. **Push your code**:
+   - Enter a repository name (e.g., `diwali-sky-firecrackers`).
+   - Keep the repository **Public** and click **Create repository**.
+2. **Push Your Files**:
+   In your project directory terminal, run:
    ```bash
    git init
    git add .
-   git commit -m "Initial commit: Realistic Diwali sky firecrackers animation"
+   git commit -m "Initial commit: Realistic sky firecrackers animation"
    git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+   git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPO-NAME>.git
    git push -u origin main
    ```
 3. **Enable GitHub Pages**:
-   - In your GitHub repository, click on **Settings** (gear icon at the top).
-   - In the left sidebar, click on **Pages**.
+   - In your GitHub repository, click **Settings** (top menu).
+   - In the left sidebar, click **Pages**.
    - Under **Build and deployment** > **Branch**:
      - Select branch: `main`
      - Select folder: `/(root)`
      - Click **Save**.
-4. **Access your live link**:
-   - Within 1–2 minutes, GitHub will generate your live link:
+4. **Live URL**:
+   - Within 1–2 minutes, GitHub will publish your site at:
      ```text
-     https://<your-username>.github.io/<your-repo-name>/
+     https://<YOUR-USERNAME>.github.io/<YOUR-REPO-NAME>/
      ```
-   - Anyone visiting this link can watch the animation directly in their browser without downloading any files!
 
 ---
 
-## 🎮 Interactivity & Controls
+## 🎮 Interactivity
 
-- **Interactive Launches**: Click or tap anywhere on the dark sky at any time to launch a custom firecracker directly to your cursor coordinates.
-- **Audio Effects**:
-  - **Browser (`index.html`)**: Procedurally synthesized Web Audio API (launch whoosh, sub-bass detonation thump, sharp explosion crack, and sizzling sparkler crackles). Zero external MP3 files needed.
-  - **Python (`main.py`)**: Threaded Windows `winsound` audio beeps and detonation pops.
-- **Continuous Showcase**: Runs a choreographed beginning-to-end firework display that loops seamlessly.
-
----
-
-## 🛠️ Technical Details
-
-- **Rendering**: HTML5 2D Canvas with `globalCompositeOperation = 'lighter'` for authentic light emission bloom.
-- **Physics Modeling**:
-  - Velocity vectors: $\vec{v} = (v_x, v_y)$
-  - Air resistance drag: $\vec{v} \leftarrow \vec{v} \times \text{drag}$
-  - Gravity acceleration: $v_y \leftarrow v_y + g$
-  - Particle history buffering for curved light trails.
-- **Dependencies**: **0** (Zero external libraries or npm packages).
+- **Click / Tap**: Click anywhere in the sky to launch a custom firecracker directly to that coordinate.
+- **Continuous Show**: The simulation runs automatically and seamlessly loops after the grand finale.
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source under the [MIT License](LICENSE).
